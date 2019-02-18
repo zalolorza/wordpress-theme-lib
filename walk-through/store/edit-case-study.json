@@ -1,0 +1,34 @@
+[
+
+   {
+        "el":".menu-icon-case-study",
+        "text": "D'es d'aquí pots consultar tots els casos, afegirne de nous o editar les categories i les etiquetes. Les categories son compartides amb les organitzacions, i les etiquetes son compartides amb les organitzacions i els articles del blog."
+    },
+
+   {
+        "el":"#the-list",
+        "text": "Aquí trobaràs la llista de tots els casos. Pots arrossegar-los per reordernar-los",
+        "placement": "top-start",
+        "targetOptions":{
+                "addDot":false
+            }
+    },
+
+    {
+        "el":"#split-page-title-action",
+        "text": "Aquí pots afegir nous casos. <br><br><b><span style='color:red'>IMPORTANT!</span> Escull sempre l'opció 'Gutenberg' com a editor, ja que l'editor clàssic quedarà obsolet en la propera versió de WordPress</b>",
+        "placement": "right-start",
+        "targetOptions":{
+            "addDot":false
+        },
+        "before":{
+            "event":"click",
+            "target":"#split-page-title-action .expander"
+        },
+        "after":{
+            "event":"click",
+            "target":"#split-page-title-action .expander"
+        }
+   }
+
+]

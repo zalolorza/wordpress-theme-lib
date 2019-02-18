@@ -1,0 +1,112 @@
+[
+    
+    {
+        "el":".components-icon-button[aria-label='Settings']",
+        "text": "Aquí pots amagar o mostrar les opcions",
+        "after":{
+            "event":"click",
+            "target":".components-icon-button[aria-label='Settings'][aria-expanded='false']"
+        }
+    },
+    {
+        "el":".edit-post-sidebar__panel-tab:nth-child(1)",
+        "text": "Aquí hi tens dos panells, a 'Document' hi ha opcions generals del cas d'estudi, mentre que el panell 'Block' fa referència al bloc que tens seleccionat al editor principal"
+    },
+    
+    {
+        "el":".components-panel__body.edit-post-post-status",
+        "text": "En aquest panell hi trobaràs l'estat general del article.",
+        "before":{
+            "event":"click",
+            "target":".components-panel__body.edit-post-post-status:not(.is-opened) button"
+        }
+    },
+
+    {
+        "el":".components-panel__row.edit-post-post-visibility",
+        "text": "L'article pot ser públic o privat (només es pot veure si estàs loguejada al administrador). Si tens un article a mitges, deixa'l com a privat i publica'l quan l'acabis de completar",
+        "before":{
+            "event":"click",
+            "target":".edit-post-post-visibility__toggle[aria-expanded='false']"
+        },
+        "after":{
+            "event":"click",
+            "target":".edit-post-post-visibility__toggle[aria-expanded='true']"
+        }
+    },
+
+
+    {
+        "el":".components-panel__row.edit-post-post-schedule",
+        "text": "Aquí pots canviar la data de publicació. Això serveix per a ordenar els articles. Pots ordenarlos manualment desde el llistat arrossegant-los, però per a ordenarlos respecte les organitzacions et caldrà fer-ho desde la data de publicació. Els mes nous es mostren primer",
+        "before":{
+            "event":"click",
+            "target":".components-button.edit-post-post-schedule__toggle[aria-expanded='false']"
+        },
+        "after":{
+            "event":"click",
+            "target":".components-button.edit-post-post-schedule__toggle[aria-expanded='true']"
+        }
+    },
+
+    
+    {
+        "el":".components-panel__body:nth-child(2)",
+        "text": "Aquí pots editar o afegir Categories. Les categories son diferents de les etiquetes perquè es poden anidar unes dins d'altres. Cal mantenir un ecosistema de categories reduït i una estructura jeràrquica planejada. <br>Si dubtes, fes una etiqueta millor.</b>",
+        "before":{
+            "event":"click",
+            "target":".components-panel__body:nth-child(2):not(.is-opened) button"
+        }
+    },
+
+    {
+        "el":".components-panel__body:nth-child(3)",
+        "text": "Aquí pots editar o afegir Etiquetes. Escriu les etiquetes separant-les amb una coma (ja veuràs que s'afegeixen automàticament). Pots afegir tantes com vulguis. De cara al usuari les etiquetes funcionaran coma a categories.",
+        "before":{
+            "event":"click",
+            "target":".components-panel__body:nth-child(3):not(.is-opened) button"
+        }
+    },
+
+    {
+        "el":".components-panel__body:nth-child(4)",
+        "text": "Aquesta és la imatge destacada. És la que apareixerà a qualsevol lloc on hi hagi una miniatura/previsualització: el llistat de casos, la home, la cerca,...",
+        "before":{
+            "event":"click",
+            "target":".components-panel__body:nth-child(4):not(.is-opened) button"
+        }
+    },
+
+
+    {
+        "el":".components-panel__body:nth-child(5)",
+        "text": "Aquest és el resum del article. Apareixerà a qualsevol lloc on hi hagi una miniatura/previsualització: el llistat de casos, la home, la cerca...",
+        "before":{
+            "event":"click",
+            "target":".components-panel__body:nth-child(5):not(.is-opened) button"
+        }
+    },
+
+    {
+        "el":"#acf-group_5ba0c8fe64eda",
+        "text": "Determina si el cas està catalogat o no (el que deiem 'featured' al principi del projecte). Els no catalogats apareixeran al final de la llista de casos, sense imatge. <br><br><strong>Els 'NO' catalogats només inclouen: títol i descripció</strong>. Tot i així els podeu classificar amb categories i etiquetes per a motius de cerca."
+    },
+    {
+        "el":"#acf-group_5ba0c03716ea1",
+        "text": "Aquest botó duu al prototip del disseny gràfic de la fitxa de casos d'estudi",
+        "links":[
+            {
+                 "callback":"Opcions"
+            }
+         ]
+    },
+    {
+        "el":"#acf-group_5ba0c03716ea2",
+        "text": "Aquest botó duu al prototip del disseny gràfic corresponent a la fitxa de les organitzacions",
+        "links":[
+            {
+                 "callback":"Opcions"
+            }
+         ]
+    }
+]

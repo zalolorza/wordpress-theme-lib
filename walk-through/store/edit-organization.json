@@ -1,0 +1,34 @@
+[
+
+   {
+        "el":".menu-icon-organization",
+        "text": "D'es d'aquí pots consultar totes les organitzacions, afegir-ne de noves o editar les categories i les etiquetes. Les categories son compartides amb els casos, i les etiquetes son compartides amb els caos i els articles del blog."
+    },
+
+   {
+        "el":"#the-list",
+        "text": "Aquí trobaràs la llista de totes les organitzacions. Pots arrossegar-les per reordernar-les",
+        "placement": "top-start",
+        "targetOptions":{
+                "addDot":false
+            }
+    },
+
+    {
+        "el":"#split-page-title-action",
+        "text": "Aquí pots afegir noves organitzacions. <br><br><b><span style='color:red'>IMPORTANT!</span> Escull sempre l'opció 'Gutenberg' com a editor, ja que l'editor clàssic quedarà obsolet en la propera versió de WordPress</b>",
+        "placement": "right-start",
+        "targetOptions":{
+            "addDot":false
+        },
+        "before":{
+            "event":"click",
+            "target":"#split-page-title-action .expander"
+        },
+        "after":{
+            "event":"click",
+            "target":"#split-page-title-action .expander"
+        }
+   }
+
+]

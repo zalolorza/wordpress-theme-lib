@@ -1,0 +1,104 @@
+[
+    
+    {
+        "el":".components-icon-button[aria-label='Settings']",
+        "text": "Aquí pots amagar o mostrar les opcions",
+        "after":{
+            "event":"click",
+            "target":".components-icon-button[aria-label='Settings'][aria-expanded='false']"
+        }
+    },
+    {
+        "el":".edit-post-sidebar__panel-tab:nth-child(1)",
+        "text": "Aquí hi tens dos panells, a 'Document' hi ha opcions generals del cas d'estudi, mentre que el panell 'Block' fa referència al bloc que tens seleccionat al editor principal"
+    },
+    
+    {
+        "el":".components-panel__body.edit-post-post-status",
+        "text": "En aquest panell hi trobaràs l'estat general del article.",
+        "before":{
+            "event":"click",
+            "target":".components-panel__body.edit-post-post-status:not(.is-opened) button"
+        }
+    },
+
+    {
+        "el":".components-panel__row.edit-post-post-visibility",
+        "text": "L'article pot ser públic o privat (només es pot veure si estàs loguejada al administrador). Si tens un article a mitges, deixa'l com a privat i publica'l quan l'acabis de completar",
+        "before":{
+            "event":"click",
+            "target":".edit-post-post-visibility__toggle[aria-expanded='false']"
+        },
+        "after":{
+            "event":"click",
+            "target":".edit-post-post-visibility__toggle[aria-expanded='true']"
+        }
+    },
+
+
+    {
+        "el":".components-panel__row.edit-post-post-schedule",
+        "text": "Aquí pots canviar la data de publicació. A diferència dels casos i les organitzacions, els articles del blog s'ordenen només per data de publicació (no es poden arrossegar i ordenar)",
+        "before":{
+            "event":"click",
+            "target":".components-button.edit-post-post-schedule__toggle[aria-expanded='false']"
+        },
+        "after":{
+            "event":"click",
+            "target":".components-button.edit-post-post-schedule__toggle[aria-expanded='true']"
+        }
+    },
+
+ 
+
+    {
+        "el":".components-panel__body:nth-child(2)",
+        "text": "Aquí pots editar o afegir Etiquetes. Escriu les etiquetes separant-les amb una coma (ja veuràs que s'afegeixen automàticament). Pots afegir tantes com vulguis.",
+        "before":{
+            "event":"click",
+            "target":".components-panel__body:nth-child(2):not(.is-opened) button"
+        }
+    },
+
+    {
+        "el":".components-panel__body:nth-child(3)",
+        "text": "Aquesta és la imatge destacada. És la que apareixerà a qualsevol lloc on hi hagi una miniatura/previsualització: el llistat d'articles, la home, la cerca,...",
+        "before":{
+            "event":"click",
+            "target":".components-panel__body:nth-child(3):not(.is-opened) button"
+        }
+    },
+
+    {
+        "el":"#acf-group_5ba0c03716ea3",
+        "text": "Aquest botó duu al prototip gràfic de l'article del blog"
+    },
+
+    {
+        "el":"#acf-group_5b9f4e3fdcfdf > h2",
+        "text": "Galeria. No és un camp obligatori.<br><br>Quan afegeixis imatges, pots convertir aquestes en vídeos. Clica sobre una imatge i veuràs camps extres: la descripció de peu de pàgina, el vídeo (youtube, vimeo,...), i la opció de si la imatge cal que vagi encaixada o no (si la imatge es pot o no es pot retallar)",
+        "placement":"bottom",
+        "targetOptions":{
+            "dotPlacement":"center",
+            "addShadow":false
+        }
+       
+    },
+
+    {
+        "el":"#acf-group_5ba067c1172ef > h2",
+        "text": "Articles relacionats",
+        "placement":"bottom",
+        "targetOptions":{
+            "dotPlacement":"center",
+            "addShadow":false
+        },
+        "links":[
+            {
+                 "callback":"Editor Gutenberg",
+                 "text": "Tutorial sobre l'editor Gutenberg"
+            }
+         ]
+       
+    }
+]

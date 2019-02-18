@@ -1,0 +1,474 @@
+  .popper,
+  .tooltip,
+  #editor.gutenberg__editor .editor-writing-flow .tooltip {
+      position: absolute;
+      color: black;
+      width: 300px !important;
+      visibility: visible !important;
+      
+      padding: 6px !important;
+      text-align: left !important;
+      z-index: 999999999999999 !important;
+
+      &, * {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 400;
+      line-height: 32px;
+      line-height: 1.7em !important;
+      }
+
+      a, button {
+          cursor:pointer !important;
+      }
+
+      a {
+          text-decoration:underline !important;
+          display: inline-block !important;
+          opacity:1 !important;
+          color: #006799 !important;
+          margin-right: 1em !important;
+          padding-left: 0 !important;
+          padding:0 !important;
+          &:hover {
+               color: rgb(255,84,64) !important;
+          }
+      }
+
+      .tooltip-body {
+        border-radius: 2px !important;
+        padding: 15px 30px 20px 20px !important;
+        border: 1px solid #e5e5e5 !important;
+        box-shadow: 0 1px 5px rgba(0,0,0,.1) !important;
+        background: #fff !important;
+        position:relative !important;
+      }
+
+      .tooltip-inner {
+          padding-bottom: 1em;
+          color:#444;
+          
+      }
+
+      .close-tooltip {
+          border-radius: 50% !important;
+          width:14px !important;
+          height:14px !important;
+          border:none !important;
+          background:gray !important;
+          text-align: center !important;
+          padding:0 !important;
+          position:absolute !important;
+          top:10px !important;
+          right:10px !important;
+          line-height: 1em !important;
+          &:hover {
+              background:black !important;
+          }
+      }
+  }
+
+  #wpadminbar .tooltip .tooltip-inner, 
+  #wpadminbar * .tooltip .tooltip-inner,
+  #wpadminbar .tooltip .tooltip-inner *, 
+  #wpadminbar * .tooltip .tooltip-inner * {
+    line-height: 1.7em !important;
+    margin-bottom:1em !important;
+  }
+
+
+  
+  .popper .popper__arrow,
+  .tooltip .tooltip-arrow {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      margin: 5px;
+  }
+  
+  .tooltip .tooltip-arrow,
+  .popper .popper__arrow {
+      border-color: #2960AD;
+  }
+  .style5 .tooltip .tooltip-arrow {
+      border-color: #1E252B;
+  }
+  .popper[x-placement^="top"],
+  .tooltip[x-placement^="top"] {
+      margin-bottom: 5px;
+
+      &:before {
+          top:auto;
+        bottom:-28px;
+        left:50%;
+        margin-left:-12px;
+    }
+    &:after {
+        top:auto;
+      bottom:-20px;
+      left:50%;
+      @include translate(-50%,0,0);
+    }
+      
+  }
+  .popper[x-placement^="top"] .popper__arrow,
+  .tooltip[x-placement^="top"] .tooltip-arrow {
+      border-width: 5px 5px 0 5px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      bottom: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .popper[x-placement^="bottom"],
+  .tooltip[x-placement^="bottom"] {
+      margin-top: 5px;
+
+      &:before {
+        top:-28px;
+        left:50%;
+        margin-left:-12px;
+    }
+    &:after {
+      top:-20px;
+      left:50%;
+      @include translate(-50%,0,0);
+    }
+
+
+  }
+  .tooltip[x-placement^="bottom"] .tooltip-arrow,
+  .popper[x-placement^="bottom"] .popper__arrow {
+      border-width: 0 5px 5px 5px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      top: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .tooltip[x-placement^="right"],
+  .popper[x-placement^="right"] {
+      margin-left: 5px;
+
+      &:before {
+          left:-28px;
+          top:50%;
+          margin-top:-12px;
+      }
+      &:after {
+        left:-20px;
+        top:50%;
+        @include translate(0,-50%,0);
+    }
+  }
+  .popper[x-placement^="right"] .popper__arrow,
+  .tooltip[x-placement^="right"] .tooltip-arrow {
+      border-width: 5px 5px 5px 0;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      left: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0;
+  }
+  .popper[x-placement^="left"],
+  .tooltip[x-placement^="left"] {
+      margin-right: 5px;
+
+      &:before {
+        left:auto;
+        right:-28px;
+        top:50%;
+        margin-top:-12px;
+      }
+        &:after {
+        left:auto;
+        right:-20px;
+        top:50%;
+        @include translate(0,-50%,0);
+      }
+  }
+  .popper[x-placement^="left"] .popper__arrow,
+  .tooltip[x-placement^="left"] .tooltip-arrow {
+      border-width: 5px 0 5px 5px;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      right: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0;
+  }
+  
+
+
+
+/****
+/*
+/*  Tooltip target
+/*
+***/
+
+
+.tooltip-target {
+
+    &:not(.tooltip-no-shadow) {
+
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+        
+    }
+}
+
+
+/****
+/*
+/*  Nuxt-dot
+/*
+***/
+
+
+.tooltip-target .nux-dot{
+    position:absolute !important;
+    z-index: 999999 !important;
+    display:block !important;
+    width:24px !important;
+    height:24px !important;
+
+};
+.tooltip-target .nux-dot:before {
+    height: 24px;
+    transform: scale(.33333);
+    width: 24px;
+}
+.tooltip-target .nux-dot:after,  
+.tooltip-target .nux-dot:before {
+    border-radius: 100%;
+    content: " ";
+    pointer-events: none;
+    position: absolute;
+}
+
+
+.tooltip-target .nux-dot:after {
+    height: 8px;
+    width: 8px
+}
+
+
+.tooltip-target .nux-dot {
+
+    left: 50%;
+    top: 50%;
+    height: 24px;
+    width: 24px;
+
+    margin-left:-12px !important;
+    margin-top:-12px !important;
+
+    &:before {
+        left: 0px;
+        top: 0px;
+    }
+    &:after {
+        left: 50%;
+        top: 50%;
+        margin-left:-4px;
+        margin-top:-4px; 
+    }  
+
+    &.nuxt-center-center,
+    &.nuxt-center {
+        left: 50%;
+        top: 50%;
+    }
+
+    &.nuxt-right-center,
+    &.nuxt-right {
+        left: auto;
+        right:5px;
+        top: 50%;
+    }
+
+    &.nuxt-left-center,
+    &.nuxt-left,
+    &.nuxt-center-left {
+        top: 50%;
+        left: 15px;
+    }
+
+    &.nuxt-left-top,
+    &.nuxt-top-left  {
+        top: 15px;
+        left: 15px;
+    }
+
+    &.nuxt-left-bottom,
+    &.nuxt-bottom-left  {
+        top: auto;
+        left: 15px;
+        bottom:5px;
+    }
+
+    &.nuxt-right-center,
+    &.nuxt-right,
+    &.nuxt-center-right {
+        left: auto;
+        right:5px;
+        top: 50%;
+    }
+
+    &.nuxt-right-top,
+    &.nuxt-top-right {
+        left:auto;
+        top: 15px;
+        right: 5px;
+    }
+
+    &.nuxt-right-bottom,
+    &.nuxt-bottom-right {
+        top: auto;
+        left: auto;
+        right: 5px;
+        bottom:5px;
+    }
+
+    &.nuxt-center-top,
+    &.nuxt-top-center,
+    &.nuxt-top {
+        top: 15px;
+    }
+
+    &.nuxt-center-bottom,
+    &.nuxt-bottom-center,
+    &.nuxt-bottom {
+        top: auto;
+        bottom:0;
+    }
+   
+}
+
+
+
+#adminmenu > li.tooltip-target .nux-dot {
+        left: auto;
+        right:5px;
+        top: 50%;
+}
+
+.tooltip-target .nux-dot {
+
+    &.nuxt-red{
+        &:after {
+            background: rgb(226, 11, 58);
+        }
+        &:before {
+            animation: nux-pulse-red 1.6s infinite cubic-bezier(.17,.67,.92,.62);
+            background: rgba(255,84,64,.9);
+        }
+    }
+
+    &.nuxt-blue {
+
+        &:after {
+            background: rgb(41, 96, 173);
+        }
+
+        &:before {
+             background: rgba(41, 96, 173,0.9);
+            animation: nux-pulse-blue 1.6s infinite cubic-bezier(.17,.67,.92,.62);
+        } 
+    }
+   
+}
+
+
+
+
+
+
+
+@keyframes nux-pulse-red {
+    to {
+        background: rgba(255,84,64,0);
+        transform: scale(1)
+    }
+}
+
+@keyframes nux-pulse-blue {
+    to {
+        background: rgba(41, 96, 173,0);
+        transform: scale(1)
+    }
+}
+
+
+
+.components-panel__body,
+.components-panel__body-title {
+    position:relative;
+}
+
+
+#editor.gutenberg__editor .edit-post-header {
+    z-index: 99;
+}
+
+
+.tutorial-button {
+    position:relative;
+    .ab-icon {
+        top:3px;
+        width:20px !important;
+        display:inline-block;
+        &:before {
+            content: "\f348";
+            }
+    }
+    &.is-open  .ab-icon{
+        
+        top:2px;
+        &:before {
+            content: "\f153";
+            color:black !important;
+            opacity:0.35;
+            font-size:0.9em;
+        }
+    }
+    & a.ab-item:hover  .ab-icon:before {
+        opacity:0.7;
+    }
+    &.is-open a.ab-item {
+       // padding-left: 30px !important; 
+    }
+    .close-tooltip {
+        border-radius: 50% !important;
+        width:12px !important;
+        height:12px !important;
+        border:none !important;
+        background:white !important;
+        text-align: center !important;
+        padding:0 !important;
+        position:absolute !important;
+        top:50% !important;
+        margin-top: -6px !important;
+        left:10px !important;
+        line-height: 1em !important;
+        opacity:0.5;
+        cursor:pointer;
+        z-index: -1;
+        
+    }
+   
+}
+
+.edit-post-sidebar__panel-tab {
+    position:relative;
+}

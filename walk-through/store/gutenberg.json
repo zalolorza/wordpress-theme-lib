@@ -1,0 +1,134 @@
+[
+    
+    {
+        "el":".walk-through-link-editor-gutenberg",
+        "text": "Benvinguda al nou editor de WordPress, Gutenberg. És una mica complex però he limitat les opcions per a fer-lo més senzill.",
+        "placement": "bottom",
+        "targetOptions":{
+            "addDot":false,
+            "addShadow":false
+        }
+    },
+    {
+        "el":".editor-post-title__block > div",
+        "text": "Aquí pots editar el títol general de l'article. Si cliques també apareixerà una caixa per a editar-ne la URL",
+        "placement": "bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left-center",
+            "addShadow":true
+        }
+    },
+  
+    {
+        "el":".edit-post-header .editor-inserter__toggle",
+        "text": "El nou editor funciona afegint blocs dinàmics. Els pots afegir clicant a aquest botó. L'editor Gutenberg nodreix el contingut central de l'article: la descripció dels casos, el text de l'article del blog,...",
+        "placement": "bottom-start",
+        "before":{
+            "event":"click",
+            "target":".edit-post-header .editor-inserter__toggle[aria-expanded='true']"
+        }
+    },
+
+   {
+    "el":".components-popover__content",
+    "text": "Hi ha diferents tipus de blocs, segons el contingut que vulguis afegir. Aquí els trobaràs tots.",
+    "placement": "right-start",
+    "before":{
+        "event":"click",
+        "target":".edit-post-header .editor-inserter__toggle[aria-expanded='false']"
+    },
+    "targetOptions":{
+        "dotPlacement":"top-right",
+        "addShadow":false
+    }
+   },
+
+   {
+    "el":".editor-inserter__results .components-panel__body:nth-child(2)",
+    "text": "Normalment només faràs servir el bloc de text, però pot ser que necessitis contingut enriquit, especialment als articles del bloc. A 'common blocks' hi trobaràs els mes habituals",
+    "before":[
+        {
+            "event":"click",
+            "target":".editor-inserter__results .components-panel__body [aria-expanded='false']"
+        }
+    ]
+   },
+
+   
+
+   {
+    "el":".editor-block-list-item-paragraph",
+    "text":"Aquest bloc afegirà una caixa de text. Cada paràgraf crearà un nou bloc. Aquests serà el bloc que facis servir mes"
+    },
+
+   {
+       "el":".editor-block-types-list__item.editor-block-list-item-image",
+       "text":"Aquest bloc afegirà una imatge"
+   },
+
+   {
+        "el":".editor-block-list-item-engage-post-selector",
+        "text":"Afegeix una miniatura d'un cas o una organització. Pot ser que al mig del teu contingut vulguis referenciar un cas d'estudi o una organització, especialment als articles del blog. Aquest bloc et permet incrustar una miniatura d'un cas o una organització concrets.",
+        "before":[
+            {
+                "event":"click",
+                "target":".editor-inserter__results .components-panel__body [aria-expanded='false']"
+            }
+        ]
+    },
+
+    {
+        "el":".editor-inserter__results .components-panel__body:nth-child(4)",
+        "text": "Aquí trobareu altres components per incrustar vídeos, articles de twitter, posts d'instagram,... Si creieu que us falta alguna plataforma feu'm-ho saber. Aquests blocs estan pensats especialment per als articles del blog.",
+        "before":[
+            {
+                "event":"click",
+                "target":".edit-post-header .editor-inserter__toggle[aria-expanded='false']"
+            },
+            {
+                "event":"click",
+                "target":".editor-inserter__results .components-panel__body [aria-expanded='false']"
+            }
+        ]
+    },
+    {
+        "el":".edit-post-sidebar__panel-tab:nth-child(2)",
+        "text": "Si et fixes he afegit una miniatura de cas / organització al editor central. Al panell 'Block' podràs editar-ne les propietats.",
+        "before":[
+            {
+                "event":"click",
+                "target":".editor-inserter__results .components-panel__body [aria-expanded='false']"
+            },
+            {
+                "event":"click",
+                "target":".editor-block-list-item-engage-post-selector"
+            },
+            {
+                "event":"click",
+                "target":".edit-post-header .editor-inserter__toggle[aria-expanded='true']",
+                "delayAfter":0
+            },
+            {
+                "event":"click",
+                "target":".edit-post-sidebar__panel-tab:nth-child(2)"
+            }
+        ]
+    },
+    {
+        "el":".editor-block-inspector__card",
+        "text": "En aquest cas tens un slector de casos i organitzacions. Si selecciones un s'actualitzarà al editor dinàmicament",
+        "before":[
+            {
+                "event":"click",
+                "target":".edit-post-sidebar__panel-tab:nth-child(2)"
+            }
+        ],
+        "links":[
+            {
+                 "callback":"Menú lateral",
+                 "text": "Tutorial sobre el menú lateral"
+            }
+         ]
+    }
+   
+]

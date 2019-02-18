@@ -1,0 +1,21 @@
+[ 
+
+    {
+        "el":".acf-field-5ba8838bf1fe2",
+        "text": "Activa o desactiva la notificació",
+        "placement": "bottom-start",
+        "targetOptions":{
+            "dotPlacement":"center-left",
+            "addShadow":false
+        }
+    },
+    {
+        "el":".acf-field-5ba883b3f1fe3",
+        "text": "Text de la notificació",
+        "placement": "bottom-start",
+        "targetOptions":{
+            "dotPlacement":"center",
+            "addShadow":true
+        }
+    }
+]

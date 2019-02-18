@@ -1,0 +1,170 @@
+[
+
+    
+    {
+        "el":"#acf-group_5ba749095c793 > h2",
+        "text": "Opcions principals de la fitxa del cas",
+        "placement":"bottom",
+        "targetOptions":{
+            "dotPlacement":"center",
+            "addShadow":false
+        }
+       
+    },
+
+    {
+        "el":"#acf-group_5ba74aa649875 > h2",
+        "text": "Opcions principals de la fitxa de l'organització",
+        "placement":"bottom",
+        "targetOptions":{
+            "dotPlacement":"center",
+            "addShadow":false
+        }
+       
+    },
+
+    
+
+    {
+        "el":".acf-field-5ba0cab16fea2",
+        "text": "L'organització o organitzacions (poden ser vàries) que han organitzat/dirigit el projecte",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+
+    {
+        "el":".acf-field-5ba0cdbbc683e",
+        "text": "Logotip de la organització (imatge). Apareixerà en algunes miniatures si existeix, en comptes de la imatge destacada",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+    
+    {
+        "el":".acf-field-5ba74b2c6599e",
+        "text": "Projectes que han organitzat directament",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+
+
+    {
+        "el":".acf-field-5ba0cab16fea3",
+        "text": "0rganitzacions que han participat d'alguna manera en el projecte però no l'han dirigit o organitzat. Això serveix per establir relacions",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+
+    {
+        "el":".acf-field-5ba74b2c6599f",
+        "text": "Projectes en que han participat però no han organitzat activament. Serivirà per establir relacions",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+
+    {
+        "el":".acf-field-5ba0ccb95b3a7",
+        "text": "Organitzacions amb les que han col·laborat. Aquest camp es va nodrint de forma autòmatica a través de les relacions amb els Casos d'estudi, però pots afegir mes col·laboracions manualment ",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+   
+
+    {
+        "el":".acf-field-5ba0d4b1004f5",
+        "text": "Rang d'edats del públic objectiu del projecte",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+
+    {
+        "el":".acf-field-5ba0d9ada5b3d",
+        "text": "Pàgina web del projecte. Si es deixa buid no apareixerà. cal posar la URL complerta, amb 'http...'",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+
+    {
+        "el":".acf-field-5ba0d622de09d",
+        "text": "Aquest repetidor et permet afegir parells de camps personalitzats Etiqueta > Valor",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+
+
+    {
+        "el":".acf-field-5ba0c9692c7d1",
+        "text": "Fitxa complerta en PDF. EL cercador que he programat pot llegir continguts de text dins del PDF",
+        "placement":"bottom-start",
+        "targetOptions":{
+            "dotPlacement":"left"
+        }
+       
+    },
+
+    {
+        "el":".acf-field-5ba0a8049ea1b",
+        "text": "Mapa. Pots cercar per direcció o per nom del establiment. Prova a cercar 'PEN Català'. També pots moure el punter manualment.",
+        "placement":"top-start",
+        "targetOptions":{
+            "dotPlacement":"left-top"
+        }
+       
+    },
+
+    
+    {
+        "el":"#acf-group_5b9f4e3fdcfdf > h2",
+        "text": "Galeria. No és un camp obligatori.<br><br>Quan afegeixis imatges, pots convertir aquestes en vídeos. Clica sobre una imatge i veuràs camps extres: la descripció de peu de pàgina, el vídeo (youtube, vimeo,...), i la opció de si la imatge cal que vagi encaixada o no (si la imatge es pot o no es pot retallar)",
+        "placement":"bottom",
+        "targetOptions":{
+            "dotPlacement":"center",
+            "addShadow":false
+        }
+       
+    },
+
+    {
+        "el":"#acf-group_5ba067058d337 > h2",
+        "text": "Articles relacionats. Es faran servir per a establir relacions i per al bloc de 'Seguir llegint' o 'Relacionats'",
+        "placement":"bottom",
+        "targetOptions":{
+            "dotPlacement":"center",
+            "addShadow":false
+        },
+        "links":[
+            {
+                 "callback":"Editor Gutenberg",
+                 "text": "Tutorial sobre l'editor Gutenberg"
+            }
+         ]
+       
+    }
+
+]

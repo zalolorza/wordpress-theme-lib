@@ -1,0 +1,142 @@
+[ 
+
+    {
+        "el":".tutorial-button",
+        "text": "En algunes de les pàgines del administrador trobaràs botons com aquest, que et guiaran a través de les principals opcions de cada pàgina. Clica a 'Següent consell' per a seguir el tutorial. També pots navegar amb les fletxes del teclat",
+        "placement": "bottom",
+        "targetOptions":{
+            "dotColor":"blue",
+            "dotPlacement":"center",
+            "addShadow":false
+        }
+    },
+
+    
+    {
+        "el":"#wpbody .wrap > h1",
+        "text": "Aquest és el taulell inicial. Aquí hi trobaràs notificacions de tant en tant",
+        "placement": "bottom-start",
+      
+        "targetOptions":{
+            "addShadow":false,
+            "dotPlacement":"left-top"
+        }
+    },
+
+    
+   {
+    "el":"#adminmenu",
+    "text": "Aquest és el menú principal de l'administrador",
+    "placement": "right-start",
+    "targetOptions":{
+        "dotPlacement":"right-top"
+    }
+    },
+
+
+   {
+    "el":".menu-icon-case-study",
+    "text": "Entra aquí per editar els casos d'estudi",
+    "placement": "right-start",
+    "links": [
+        {
+            "text":"Ves-hi"
+        }
+    ]
+   },
+   
+   {
+    "el":".menu-icon-organization",
+    "text": "... i aquí les organitzacions",
+    "placement": "right-start",
+    "links": [
+        {
+            "text":"Ves-hi"
+        }
+    ]
+   },
+
+   {
+    "el":".menu-icon-blog",
+    "text": "... i aquí les notícies i articles del blog",
+    "placement": "right-start",
+    "links": [
+        {
+            "text":"Ves-hi"
+        }
+    ]
+   },
+
+   {
+    "el":".menu-icon-page",
+    "text": "Aquí hi ha la resta de pàgines: la home, la pàgina 'About', les notes legals,...",
+    "placement": "right-start",
+    "links": [
+        {
+            "text":"Ves-hi"
+        }
+    ]
+   },
+
+   {
+    "el":".toplevel_page_notifications-center",
+    "text": "Notificació global que apareixerà a tot el web",
+    "placement": "right-start",
+    "links": [
+        {
+            "text":"Ves-hi"
+        }
+    ]
+   },
+
+   {
+    "el":".menu-icon-media",
+    "text": "Aquí no hi entraràs sovint. És la mediateca, on pots revisar totes les imatges, vídeos i documents que vagis penjant.",
+    "placement": "right-start",
+    "links": [
+        {
+            "text":"Ves-hi"
+        }
+    ]
+   },
+
+
+   {
+    "el":".menu-icon-users",
+    "text": "Aquí pots editar les teves dades personals o afegir altres usuaris. <br><br>És important que si afegiu nous usuaris ho feu amb el rol d'<em>Editor</em>",
+    "placement": "right-start",
+    "links": [
+        {
+            "text":"Ves-hi"
+        }
+    ]
+   },
+
+
+    {
+        "el":"#wp-admin-bar-new-content",
+        "text": "Des d'aquí pots afegir nous elements de manera ràpida",
+        "placement": "bottom",
+        "targetOptions":{
+            "dotColor":"blue"
+        }
+    },
+
+  
+    {
+        "el":"#wp-admin-bar-my-account",
+        "text": "Accedeix al teu perfil o tanca sessió",
+        "placement": "bottom-end",
+        "targetOptions":{
+            "dotColor":"blue"
+        },
+        "links":[
+            {
+                "url":"/wp-admin/edit.php?post_type=case-study&start-tutorial=true",
+                "text":"Propera pàgina"
+            }
+        ]
+    }
+]
+
+ 

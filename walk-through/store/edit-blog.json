@@ -1,0 +1,34 @@
+[
+
+   {
+        "el":".menu-icon-blog",
+        "text": "D'es d'aquí pots consultar totes les articles del blog i/o editar les etiquetes. Les etiquetes son compartides amb els casos i les organitzacions."
+    },
+
+   {
+        "el":"#the-list",
+        "text": "Aquí trobaràs la llista amb tots els articles del blog. En aquest cas no es poden reordenar, ja que els articles del blog s'ordenen estrictament per data",
+        "placement": "top-start",
+        "targetOptions":{
+                "addDot":false
+            }
+    },
+
+    {
+        "el":"#split-page-title-action",
+        "text": "Aquí pots afegir nous articles. <br><br><b><span style='color:red'>IMPORTANT!</span> Escull sempre l'opció 'Gutenberg' com a editor, ja que l'editor clàssic quedarà obsolet en la propera versió de WordPress</b>",
+        "placement": "right-start",
+        "targetOptions":{
+            "addDot":false
+        },
+        "before":{
+            "event":"click",
+            "target":"#split-page-title-action .expander"
+        },
+        "after":{
+            "event":"click",
+            "target":"#split-page-title-action .expander"
+        }
+   }
+
+]
