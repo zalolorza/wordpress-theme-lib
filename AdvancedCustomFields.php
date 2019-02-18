@@ -35,9 +35,9 @@ class AdvancedCustomFields {
     }
 
     public function my_acf_settings_path( $path ) {
- 
+
         // update path
-        $path = get_stylesheet_directory() . '/lib/acf/';
+        $path = LIB_DIR . '/acf/';
         
         // return
         return $path;
@@ -47,7 +47,7 @@ class AdvancedCustomFields {
     public function my_acf_settings_dir( $dir ) {
  
         // update path
-        $dir = get_stylesheet_directory_uri() .'/lib/acf/';
+        $dir = LIB_DIR . '/acf/';
         
         // return
         return $dir;

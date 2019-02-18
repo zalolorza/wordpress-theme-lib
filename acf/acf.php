@@ -71,6 +71,7 @@ class ACF {
 		$path = plugin_dir_path( __FILE__ );
 		$url = plugin_dir_url( __FILE__ );
 		$slug = dirname($basename);
+
 		
 		
 		// settings

@@ -13,6 +13,9 @@ $colors = array(
   'login_logo'=>'/static/login-logo.svg'
 );
 
+define('FAU_DIR',explode("/themes/", get_stylesheet_directory_uri())[0].'/themes/'.explode("/themes/", __DIR__)[1]);
+
+
 if(defined('ADMIN_UI')){
 
   foreach (ADMIN_UI as $key => $color){
@@ -58,7 +61,7 @@ function fau_login_theme_style() {
 
   wp_enqueue_style(
     'fau-login-style',
-    get_stylesheet_directory_uri() . '/lib/fancy-admin-ui/css/fau_styles_login.css'
+    FAU_DIR . '/css/fau_styles_login.css'
 	);
 
   $login_css = "
@@ -93,7 +96,7 @@ function fau_admin_bar_theme_style() {
 
   wp_enqueue_style(
 		'fau-admin-bar-style',
-		get_stylesheet_directory_uri() . '/lib/fancy-admin-ui/css/fau_styles_adminbar.css'
+		FAU_DIR . '/css/fau_styles_adminbar.css'
   );
   
 
@@ -131,8 +134,10 @@ function fau_admin_theme_style() {
 
   wp_enqueue_style(
 		'fau-admin-style',
-		get_stylesheet_directory_uri() . '/lib/fancy-admin-ui/css/fau_styles_admin.css'
-	);
+		FAU_DIR . '/css/fau_styles_admin.css'
+  );
+
+
 
   $admin_css = "
 

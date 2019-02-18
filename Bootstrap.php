@@ -58,7 +58,10 @@ class Bootstrap extends \Timber\Site {
 	/** Sets globals and page templates from config/*.ini files */
 		
 	private function set_globals(){
-		$init_files = array_merge(glob(realpath(dirname(__DIR__))."/dist/*.ini"), glob(realpath(dirname(__DIR__))."/**/config/*.ini"));
+
+		define('LIB_DIR',explode("/themes/", get_stylesheet_directory_uri())[0].'/themes/'.explode("/themes/", __DIR__)[1]);
+
+		$init_files = array_merge(glob(get_template_directory()."/dist/*.ini"), glob(get_template_directory()."/**/config/*.ini"));
 		foreach ($init_files as $key => $filename) {
 			$FILE = strtoupper(preg_replace('/\\.[^.\\s]{3,4}$/', '', basename($filename)));
 			
