@@ -1,13 +1,12 @@
 {
   "name": "zalolorza/wordpress-theme-lib",
   "description": "Starter theme to build a Timber theme",
-  "type": "wordpress-theme",
   "minimum-stability": "stable",
   "license": "MIT",
-  "version": "1.0",
+  "version": "0.1",
   "autoload": {
     "psr-4": {
-      "Lib\\": ""
+      "Lib\\": "/"
     }
   },
   "require": {
