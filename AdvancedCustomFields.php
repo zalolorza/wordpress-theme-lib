@@ -25,7 +25,7 @@ class AdvancedCustomFields {
         }
 
         // 4. Include ACF
-        include_once( get_stylesheet_directory() . '/lib/acf/acf.php' );
+        include_once( __DIR__ . '/acf/acf.php' );
 
         add_filter('acf/settings/load_json', array($this,'json_load_point'));
         add_filter('acf/settings/save_json', array($this,'json_save_point'));
