@@ -3,14 +3,14 @@
   "description": "Starter theme to build a Timber theme",
   "minimum-stability": "stable",
   "license": "MIT",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "autoload": {
     "psr-4": {
       "Lib\\": "/"
     }
   },
   "require": {
-    "timber/timber": "*",
+    "timber/timber": "2.x-dev",
     "php": ">=7.0"
   }
 }
