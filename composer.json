@@ -10,7 +10,8 @@
     }
   },
   "require": {
-    "timber/timber": "2.x-dev",
-    "php": ">=7.0"
+    "timber/timber": "dev-master",
+    "php": ">=7.0",
+    "twig/twig": "v1.34.0"
   }
 }
