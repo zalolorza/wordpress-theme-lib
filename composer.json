@@ -11,7 +11,6 @@
   },
   "require": {
     "timber/timber": "*",
-    "mpdf/mpdf": "^7.1",
     "php": ">=7.0"
   }
 }
