@@ -81,6 +81,8 @@ class Menus {
 
 
             $locations = get_nav_menu_locations();
+
+            if(!isset($locations[ $menu_name ])) return;
                 $menu_id = $locations[ $menu_name ];
 
                 $items = wp_get_nav_menu_items($menu_id);
